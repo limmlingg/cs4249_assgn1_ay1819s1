@@ -15,7 +15,7 @@ html {
   vertical-align: baseline;
 }
 .label + .label {
-    margin-top: 1px;
+  margin-top: 1px;
 }
 
 .btn .label {
@@ -50,7 +50,7 @@ html {
   text-align: center;
   vertical-align: middle;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
@@ -545,38 +545,38 @@ html,body { height:100%; width: 95vw }
 }
 #interaction-container{
 	border-color:#f4ad42;
-    border-size: 1px;
-    border-style: solid;
-    height:85%; /*Reduced to fit the container on my screen without any overflow-y*/
-    width:95%;
-    position:absolute;
-      
+  border-size: 1px;
+  border-style: solid;
+  height:85%; /*Reduced to fit the container on my screen without any overflow-y*/
+  width:95%;
+  position:absolute;
+
 }
 
-  #radialmenu {
-        /* Removed to make the text consistent with the marking menu text */
-        /*font-family: 'stint ultra condensed', tahoma, sans-serif;*/
-        fill: #fff !important;
-    }
+#radialmenu {
+  /* Removed to make the text consistent with the marking menu text */
+  /*font-family: 'stint ultra condensed', tahoma, sans-serif;*/
+  fill: #fff !important;
+}
 
-    .mouseover {
-        opacity: 0.5;
-    }
-    body > svg > text {
-        font-size: 60px;
-        fill: #fff;
-        /*font-family: 'stint ultra condensed', tahoma, sans-serif;*/
-    }
-    .menuitem {
-        fill: #555;
-    }
-    #path_CURSOR {
-        fill:#777;
-    }
-    .curved, .radial {
-        fill: #fff;
-    }
- 
+.mouseover {
+  opacity: 0.5;
+}
+body > svg > text {
+  font-size: 60px;
+  fill: #fff;
+  /*font-family: 'stint ultra condensed', tahoma, sans-serif;*/
+}
+.menuitem {
+  fill: #555;
+}
+#path_CURSOR {
+  fill:#777;
+}
+.curved, .radial {
+  fill: #fff;
+}
+
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -584,8 +584,8 @@ html,body { height:100%; width: 95vw }
 .btn:active.focus,
 .btn.active.focus{
  outline-style:none;
-box-shadow:none;
-border-color:transparent;
+ box-shadow:none;
+ border-color:transparent;
 }
 
 .nextPageButton {
@@ -593,4 +593,18 @@ border-color:transparent;
   margin: auto;
   margin-bottom: 50px;
   width:640px;
+}
+.screenImg {
+  border: 1px black solid;
+  width: 1000px;
+}
+
+#ulDiv {
+  margin: auto;
+  text-align: left;
+  width:800px;
+}
+li {
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
