@@ -22,9 +22,16 @@ var tracker = new ExperimentTracker();
 var markingMenuSubscription = null;
 var radialMenuSvg = null;
 
+var participantId = null;
 
+function getParticipantId() {
+	var participantId = prompt("Enter your participant id", "1");
 
-
+	if (participantId != null) {
+		window.location.href = "experiment.html";
+		console.log("Participant id: " + participantId);
+	}
+}
 
 // Load CSV files from data and return text
 function getData(relativePath) {

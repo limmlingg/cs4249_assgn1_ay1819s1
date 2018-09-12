@@ -1,5 +1,9 @@
 Id,Parent,Label
-1,0,Animals
-2,0,Food
-3,0,Clothing
-4,0,Continents
+1,0,North
+2,0,North-East
+3,0,East
+4,0,South-East
+5,0,South
+6,0,South-West
+7,0,West
+8,0,North-West
