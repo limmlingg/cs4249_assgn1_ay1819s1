@@ -286,8 +286,9 @@ function initializeMarkingMenu(){
 		interactionContainer.innerHTML += "<div id=\"marking-menu-container\" style=\"height:100%;width:100%\" onmousedown=\"markingMenuOnMouseDown()\" oncontextmenu=\"preventRightClick(event)\"></div>";
 	}
 
-	interactionContainer.addEventListener('click', function(){
+	interactionContainer.addEventListener('mousedown', function(){
 		tracker.numClicks++;
+		console.log("clicked once");
 	})
 }
 
