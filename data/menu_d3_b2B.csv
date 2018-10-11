@@ -1,0 +1,15 @@
+Id,Parent,Label
+3,0,Clothing
+4,0,Continents
+13,3,Tops
+14,3,Bottoms
+19,4,Europe
+20,4,America
+53,13,T-Shirt
+54,13,Jacket
+59,14,Tights
+60,14,Jeans
+79,19,Germany
+80,19,England
+83,20,Brazil
+84,20,USA

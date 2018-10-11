@@ -1,35 +1,66 @@
 'use strict';
 
 // Location of data files
-const trialsFile = "./data/experiments.csv"
-const menuL1File = "./data/menu_depth_1.csv"
-const menuL2File = "./data/menu_depth_2.csv"
-const menuL3File = "./data/menu_depth_3.csv"
+var trialsFile = "./data/experiments.csv";
+const menuD1B2AFile = "./data/menu_d1_b2A.csv"
+const menuD1B2BFile = "./data/menu_d1_b2B.csv"
+const menuD1B4File  = "./data/menu_d1_b4.csv"
+const menuD2B2AFile = "./data/menu_d2_b2A.csv"
+const menuD2B2BFile = "./data/menu_d2_b2B.csv"
+const menuD2B4File  = "./data/menu_d2_b4.csv"
+const menuD3B2AFile = "./data/menu_d3_b2A.csv"
+const menuD3B2BFile = "./data/menu_d3_b2B.csv"
+const menuD3B4File  = "./data/menu_d3_b4.csv"
 
 // Global variables
 var menu;
 var trialsData = [];
 var numTrials = 0;
 var currentTrial = 1;
-var markingMenuL1 = [];
-var markingMenuL2 = [];
-var markingMenuL3 = [];
+var markingMenuD1B2A = [];
+var markingMenuD1B2B = [];
+var markingMenuD1B4  = [];
+var markingMenuD2B2A = [];
+var markingMenuD2B2B = [];
+var markingMenuD2B4  = [];
+var markingMenuD3B2A = [];
+var markingMenuD3B2B = [];
+var markingMenuD3B4  = [];
 var radialMenuTree = null;
-var radialMenuL1 = [];
-var radialMenuL2 = [];
-var radialMenuL3 = [];
+var radialMenuD1B2A = [];
+var radialMenuD1B2B = [];
+var radialMenuD1B4  = [];
+var radialMenuD2B2A = [];
+var radialMenuD2B2B = [];
+var radialMenuD2B4  = [];
+var radialMenuD3B2A = [];
+var radialMenuD3B2B = [];
+var radialMenuD3B4  = [];
 var tracker = new ExperimentTracker();
 var markingMenuSubscription = null;
 var radialMenuSvg = null;
 
-var participantId = null;
+var participantType = null;
 
 function getParticipantId() {
 	var participantId = prompt("Enter your participant id", "1");
 
 	if (participantId != null) {
 		window.location.href = "experiment.html";
-		console.log("Participant id: " + participantId);
+		//console.log("Participant id: " + participantId);
+		participantType = participantId%4; // Get participant type from 0-3.
+
+		if (participantType == 0) {
+			trialsFile = "./data/experiment_1.csv";
+		} else if (participantType == 1) {
+			trialsFile = "./data/experiment_2.csv";
+		} else if (participantType == 2) {
+			trialsFile = "./data/experiment_3.csv";
+		} else if (participantType == 3) {
+			trialsFile = "./data/experiment_4.csv";
+		}
+
+		console.log("Trials File: " + trialsFile);
 	}
 }
 
@@ -54,8 +85,8 @@ function initExperiment() {
 		var cells = records[i].split(",");
 		var menuType = cells[0].trim();
 		var menuDepth = cells[1].trim();
-		var targetItem = cells[2].trim();
-		var menuBreadth = cells[3].trim();
+		var menuBreadth = cells[2].trim();
+		var targetItem = cells[3].trim();
 		trialsData[i] = {
 			'Menu Type': menuType,
 			'Menu Depth': menuDepth,
@@ -65,17 +96,35 @@ function initExperiment() {
 	}
 
 	// Get Menus
-	var menuL1Data = getData(menuL1File);
-	var menuL2Data = getData(menuL2File);
-	var menuL3Data = getData(menuL3File);
+	var menuD1B2AData = getData(menuD1B2AFile);
+	var menuD1B2BData = getData(menuD1B2BFile);
+	var menuD1B4Data  = getData(menuD1B4File);
+	var menuD2B2AData = getData(menuD2B2AFile);
+	var menuD2B2BData = getData(menuD2B2BFile);
+	var menuD2B4Data  = getData(menuD2B4File);
+	var menuD3B2AData = getData(menuD3B2AFile);
+	var menuD3B2BData = getData(menuD3B2BFile);
+	var menuD3B4Data  = getData(menuD3B4File);
 	
 	// Format CSV Menu to respective Menu structures
-	markingMenuL1 = formatMarkingMenuData(menuL1Data);
-	markingMenuL2 = formatMarkingMenuData(menuL2Data);
-	markingMenuL3 = formatMarkingMenuData(menuL3Data);
-	radialMenuL1 = formatRadialMenuData(menuL1Data);
-	radialMenuL2 = formatRadialMenuData(menuL2Data);
-	radialMenuL3 = formatRadialMenuData(menuL3Data);
+	markingMenuD1B2A = formatMarkingMenuData(menuD1B2AData);
+	markingMenuD1B2B = formatMarkingMenuData(menuD1B2BData);
+	markingMenuD1B4  = formatMarkingMenuData(menuD1B4Data);
+	markingMenuD2B2A = formatMarkingMenuData(menuD2B2AData);
+	markingMenuD2B2B = formatMarkingMenuData(menuD2B2BData);
+	markingMenuD2B4  = formatMarkingMenuData(menuD2B4Data);
+	markingMenuD3B2A = formatMarkingMenuData(menuD3B2AData);
+	markingMenuD3B2B = formatMarkingMenuData(menuD3B2BData);
+	markingMenuD3B4  = formatMarkingMenuData(menuD3B4Data);
+	radialMenuD1B2A = formatRadialMenuData(menuD1B2AData);
+	radialMenuD1B2B = formatRadialMenuData(menuD1B2BData);
+	radialMenuD1B4  = formatRadialMenuData(menuD1B4Data);
+	radialMenuD2B2A = formatRadialMenuData(menuD2B2AData);
+	radialMenuD2B2B = formatRadialMenuData(menuD2B2BData);
+	radialMenuD2B4  = formatRadialMenuData(menuD2B4Data);
+	radialMenuD3B2A = formatRadialMenuData(menuD3B2AData);
+	radialMenuD3B2B = formatRadialMenuData(menuD3B2BData);
+	radialMenuD3B4  = formatRadialMenuData(menuD3B4Data);
 	
 	//Start the first trial
 	nextTrial();
@@ -111,6 +160,7 @@ function nextTrial() {
 		tracker.trial = currentTrial;
 		tracker.menuType = menuType;
 		tracker.menuDepth = menuDepth;
+		tracker.menuBreadth = menuBreadth;
 		tracker.targetItem = targetItem;
 
 		if (menuType === "Marking") {
@@ -118,12 +168,42 @@ function nextTrial() {
 			initializeMarkingMenu();
 			
 			if(menuDepth == 1){
-				menu = MarkingMenu(markingMenuL1, document.getElementById('marking-menu-container'));
+
+				if(menuBreadth == 2) {
+					if (targetItem == "Animals" || targetItem == "Food") {
+						menu = MarkingMenu(markingMenuD1B2A, document.getElementById('marking-menu-container'));
+					} else {
+						menu = MarkingMenu(markingMenuD1B2B, document.getElementById('marking-menu-container'));						
+					}
+				} else if (menuBreadth == 4) {
+					menu = MarkingMenu(markingMenuD1B4, document.getElementById('marking-menu-container'));
+				}
+
 			}
 			else if(menuDepth == 2){
-				menu = MarkingMenu(markingMenuL2, document.getElementById('marking-menu-container'));
+
+				if(menuBreadth == 2) {
+					if (targetItem == "Fish" || targetItem == "Birds" || targetItem == "Fruit" || targetItem == "Vegetables") {
+						menu = MarkingMenu(markingMenuD2B2A, document.getElementById('marking-menu-container'));
+					} else { // targetItems are "Shoes", "Hat", "Asia", "Africa"
+						menu = MarkingMenu(markingMenuD2B2B, document.getElementById('marking-menu-container'));
+					}
+				} else if (menuBreadth == 4) {
+					menu = MarkingMenu(markingMenuD2B4, document.getElementById('marking-menu-container'));
+				}
+
 			}else if(menuDepth == 3){
-				menu = MarkingMenu(markingMenuL3, document.getElementById('marking-menu-container'));
+
+				if(menuBreadth == 2) {
+					if (targetItem == "Goldfish" || targetItem == "Shark" || targetItem == "Parrot" || targetItem == "Owl" ||
+						targetItem == "Beef" || targetItem == "Pork" || targetItem == "Butter" || targetItem == "Milk") {
+						menu = MarkingMenu(markingMenuD3B2A, document.getElementById('marking-menu-container'));
+					} else { // targetItems are "T-Shirt", "Jacket", "Tights", "Jeans", "Germany", "England", "Brazil", "USA"
+						menu = MarkingMenu(markingMenuD3B2B, document.getElementById('marking-menu-container'));
+					}
+				} else if (menuBreadth == 4) {
+					menu = MarkingMenu(markingMenuD3B4, document.getElementById('marking-menu-container'));
+				}
 			}
 
 			markingMenuSubscription = menu.subscribe((selection) => markingMenuOnSelect(selection));
@@ -132,14 +212,43 @@ function nextTrial() {
 
 			initializeRadialMenu();			
 			if (menuDepth == 1){
-				menu = createRadialMenu(radialMenuL1);
+
+				if(menuBreadth == 2) {
+					if (targetItem == "Animals" || targetItem == "Food") {
+						menu = createRadialMenu(radialMenuD1B2A);
+					} else {
+						menu = createRadialMenu(radialMenuD1B2B);						
+					}
+				} else if (menuBreadth == 4) {
+					menu = createRadialMenu(radialMenuD1B4);
+				}
+
 			}
 			else if(menuDepth == 2){
-				menu = createRadialMenu(radialMenuL2);
-			}else if(menuDepth == 3){
-				menu = createRadialMenu(radialMenuL3);
-			}
 
+				if(menuBreadth == 2) {
+					if (targetItem == "Fish" || targetItem == "Birds" || targetItem == "Fruit" || targetItem == "Vegetables") {
+						menu = createRadialMenu(radialMenuD2B2A);
+					} else { // targetItems are "Shoes", "Hat", "Asia", "Africa"
+						menu = createRadialMenu(radialMenuD2B2B);
+					}
+				} else if (menuBreadth == 4) {
+					menu = createRadialMenu(radialMenuD2B4);
+				}
+
+			}else if(menuDepth == 3){
+
+				if(menuBreadth == 2) {
+					if (targetItem == "Goldfish" || targetItem == "Shark" || targetItem == "Parrot" || targetItem == "Owl" ||
+						targetItem == "Beef" || targetItem == "Pork" || targetItem == "Butter" || targetItem == "Milk") {
+						menu = createRadialMenu(radialMenuD3B2A);
+					} else { // targetItems are "T-Shirt", "Jacket", "Tights", "Jeans", "Germany", "England", "Brazil", "USA"
+						menu = createRadialMenu(radialMenuD3B2B);
+					}
+				} else if (menuBreadth == 4) {
+					menu = createRadialMenu(radialMenuD3B4);
+				}
+			}
 
 		}
 
@@ -176,6 +285,10 @@ function initializeMarkingMenu(){
 	if(markingMenuContainer == null){
 		interactionContainer.innerHTML += "<div id=\"marking-menu-container\" style=\"height:100%;width:100%\" onmousedown=\"markingMenuOnMouseDown()\" oncontextmenu=\"preventRightClick(event)\"></div>";
 	}
+
+	interactionContainer.addEventListener('click', function(){
+		tracker.numClicks++;
+	})
 }
 
 //Formats csv menu data in the structure accepted by radial menu
@@ -259,6 +372,10 @@ function initializeRadialMenu(){
 		interactionContainer.innerHTML += "<div id=\"radial-menu-container\" style=\"height:100%;width:100%\" oncontextmenu=\"toggleRadialMenu(event)\"></div>";
 	}
 
+	interactionContainer.addEventListener('click', function(){
+		tracker.numClicks++;
+	})
+
 }
 
 // Create radial menu svg element
@@ -294,6 +411,7 @@ function toggleRadialMenu(e) {
 		
 			// Start timing once menu appears
 			tracker.startTimer();
+			tracker.resetClickCount();
 		}
 	}else{
 		
@@ -308,6 +426,7 @@ function toggleRadialMenu(e) {
 	
 		// Start timing once menu appears
 		tracker.startTimer();
+		tracker.resetClickCount();
 		}
 	}
 	e.preventDefault();

@@ -554,8 +554,7 @@ html,body { height:100%; width: 95vw }
 }
 
 #radialmenu {
-  /* Removed to make the text consistent with the marking menu text */
-  /*font-family: 'stint ultra condensed', tahoma, sans-serif;*/
+  font-family: 'stint ultra condensed', tahoma, sans-serif;
   fill: #fff !important;
 }
 
@@ -565,7 +564,7 @@ html,body { height:100%; width: 95vw }
 body > svg > text {
   font-size: 60px;
   fill: #fff;
-  /*font-family: 'stint ultra condensed', tahoma, sans-serif;*/
+  font-family: 'stint ultra condensed', tahoma, sans-serif;
 }
 .menuitem {
   fill: #555;

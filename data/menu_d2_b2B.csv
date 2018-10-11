@@ -1,0 +1,7 @@
+Id,Parent,Label
+3,0,Clothing
+4,0,Continents
+15,3,Shoes
+16,3,Hats
+17,4,Asia
+18,4,Africa

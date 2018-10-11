@@ -1,0 +1,15 @@
+Id,Parent,Label
+1,0,Animals
+2,0,Food
+7,1,Fish
+8,1,Birds
+11,2,Meat
+12,2,Dairy
+29,7,Goldfish
+30,7,Shark
+33,8,Parrot
+34,8,Owl
+45,11,Beef
+46,11,Pork
+49,12,Butter
+50,12,Milk

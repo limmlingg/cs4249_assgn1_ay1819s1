@@ -1,0 +1,563 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"reset",
+				"resetClickCount"
+			],
+			[
+				"par",
+				"participantId"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"align",
+				"align-self\tproperty"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"text-",
+				"text-rendering"
+			],
+			[
+				"text-st",
+				"text-decoration-style"
+			],
+			[
+				"acce",
+				"--accent-color"
+			],
+			[
+				"demo",
+				"Demo"
+			],
+			[
+				"getElementBy",
+				"getElementByClassName"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"ali",
+				"align-self"
+			],
+			[
+				"shadow",
+				"box-shadow"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"set",
+				"setDynamicBackground"
+			],
+			[
+				"random",
+				"randomRed"
+			],
+			[
+				"rand",
+				"randomBlue"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"sear",
+				"searchMutex"
+			],
+			[
+				"search",
+				"searchCount"
+			],
+			[
+				"sea",
+				"searchMutex"
+			],
+			[
+				"semInfo",
+				"semInfoStruct"
+			],
+			[
+				"Pr",
+				"printChild"
+			],
+			[
+				"prere",
+				"Prerequisites"
+			],
+			[
+				"p-",
+				"prereq-list"
+			],
+			[
+				"focus",
+				"focusArea"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/CS3203G4/StartupSPASolution/Tests/iteration1_queries1.txt",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/Iteration 1 Test Stuff/iteration1_test3.txt",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/Iteration 1 Test Stuff/iteration1_queries1.txt",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/CS3203G4/StartupSPASolution/Tests/out.xml",
+		"/D/Work/design-portfolio/index.html",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/Bernard/Team07/Code07/SPA/DesignExtractor.cpp",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/Bernard/Team07/Code07/SPA/PKB.h",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/js/experiment.js",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/instructions.html",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/experiment.html",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/index.html",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/js/experiment-tracker.js",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/README.md",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/css/experiment.css",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/data/menu_depth_1.csv",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/data/experiments.csv",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/data/menu_depth_3.csv",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/data/menu_depth_2.csv",
+		"/D/NUS/AY1819 S1/CS4249 Phenomena and Theories of Human-Computer Interaction/cs4249_assgn1_ay1819s1/data/menu_depth_3b.csv",
+		"/D/Downloads/experiment.csv",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/Bernard/Team07/Code07/SPA/Parser.cpp",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/Bernard/Team07/Code07/SPA/PKB.cpp",
+		"/D/NUS/AY1819 S1/CS3203 Software Engineering Project/Rachel/3201SWEN-master/source/front_end/DesignExtractor.cpp",
+		"/D/Work/WP Static HTML Plugin/wordpress-static-html-plugin/readme.md",
+		"/D/NUS/Radio Pulze/RPSchedule/docs/index.html",
+		"/D/Work/VO/delphi-site/css/style.css",
+		"/D/Work/VO/delphi-site/index.html",
+		"/D/NUS/Radio Pulze/RPSchedule/index.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Individual Project/index.html",
+		"/D/NUS/2018 Hack&Roll/weather/script.js",
+		"/D/NUS/2018 Hack&Roll/weather/index.html",
+		"/D/NUS/2015 HTML CSS Workshop/completed.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html8.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/TEIexample.xml",
+		"/D/NUS/2018 Hack&Roll/weather/style.css",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/dc.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html10.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html9.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html4.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html5.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html6.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html7.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/Lecture 5 code/html3.html",
+		"/D/NUS/AY1718 S2/GET1030 Digital Humanities in Arts Research/coffeeList.xml",
+		"/D/NUS/2018 Hack&Roll/weather/rainyday.js",
+		"/D/NUS/2018 Hack&Roll/weather/rainyday.min.js",
+		"/D/Work/VO/delphi-site/js/script.js",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 3/data/gitChart.js",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 3/data/shoppersChart.js",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/pulze/js/script.js",
+		"/D/NUS/2017 Hack&Roll/index.html",
+		"/D/NUS/2017 Hack&Roll/style.css",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 3/data/index.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 3/data/style.css",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/CS3240 Lab 6 D3/step-1-a-basic-pie-chart.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/pulze/css/style.css",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 3/online-shoppers-by-age-group.csv",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 3/data/git-commit-frequency.json",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Rebekah CS3240/Lab/Assignment 3/script_1.js",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Rebekah CS3240/Lab/Assignment 3/index.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/pulze/index.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/pulze/services.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/pulze/thevoices.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/pulze/hosting.html",
+		"/D/NUS/AY1718 S1/CS3244 Machine Learning/assignment1/A0000000X/hw1-train.dat",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/dist/js/script.js",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/pulze/css/bootstrap.css",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/dist/js/bootstrap.js",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/dist/css/style.css",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/dist/index.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/dist/layout.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/dist/forms.html",
+		"/D/NUS/AY1718 S1/CS3240 Interaction Design/Assignment 1/dist/css/bootstrap.css",
+		"/D/Work/design-portfolio/style.css",
+		"/D/Work/Melancholy/js/rpg_objects.js",
+		"/D/NUS/2017 Hack&Roll/script.js",
+		"/D/BVHAnimator.cpp",
+		"/D/NUS/AY1617 S2/CS3242 - 3D Modeling and Animation/CS3242Assignment1-Template/CS3242 Assignment 1/Mesh.cpp",
+		"/D/Backup/WhatsApp/Databases/msgstore-2016-08-06.1.db.crypt12",
+		"/D/NUS/AY1617 S2/CS2103T - Software Engineering/main/.project",
+		"/D/NUS/AY1617 S2/CS2103T - Software Engineering/addressbook-level3/src/seedu/addressbook/ui/DarkTheme.css",
+		"/D/NUS/2017 Hack&Roll/typee.html",
+		"/D/NUS/2017 Hack&Roll/type.js",
+		"/D/NUS/2017 Hack&Roll/canvas.js",
+		"/D/NUS/2017 Hack&Roll/typpo.html",
+		"/D/NUS/2017 Hack&Roll/ref.css",
+		"/D/NUS/2017 Hack&Roll/typerer.html",
+		"/D/NUS/AY1617 S2/CS2103T - Software Engineering/addressbook-level1-master/test/runtests.bat",
+		"/D/Programs/Games/Aveyond - Ahriman's Prophecy/Ahriman's Prophecy/Save01.lsd",
+		"/D/Work/VO/VO website (Delphi).html",
+		"/D/NUS/AY1617 S1/CS3241 - Computer Graphics/Lab 5 Ray Tracing/Lab5 Ray Tracing/main.cpp",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 5/L5/ex3/test3.out",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 5/L5/ex1/10int.dat",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 5/L5/ex3/test4.in",
+		"/D/NUS/AY1617 S1/CS2105 - Introduction to Computer Networks/assignment3/skeleton/alice/Alice.java",
+		"/D/NUS/21061022 Microsoft Azure Workshop/practice.html",
+		"/D/NUS/21061022 Microsoft Azure Workshop/practice.css",
+		"/D/NUS/21061022 Microsoft Azure Workshop/mios.html",
+		"/D/Work/SSL/Coding/example.html",
+		"/D/NUS/AY1617 S1/CS3230 - Design & Analysis of Algorithms/PA2/q2.java",
+		"/D/NUS/AY1617 S1/CS3230 - Design & Analysis of Algorithms/PA2/Main.java",
+		"/D/NUS/AY1617 S1/CS3230 - Design & Analysis of Algorithms/PA2/q1.java",
+		"/D/NUS/AY1617 S1/CS2105 - Introduction to Computer Networks/assignment2/Sender.java",
+		"/D/NUS/AY1617 S1/CS2105 - Introduction to Computer Networks/assignment2/Receiver.java",
+		"/C/Users/limml/Downloads/stencil-shadow/stencil-shadow/main.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/ex2.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/ex3.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/ex1.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/L3/L3/ex3/ex3.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/L3/L3/ex2/demo/semaphore_example.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/L3/L3/ex2/demo/semaphore_exampleImproved.c",
+		"/D/NUS/AY1617 S1/CS2105 - Introduction to Computer Networks/assignment0/Checksum.java",
+		"/C/Users/limml/Downloads/L3/L3/ex3/ex3.c",
+		"/D/NUS/AY1617 S1/CS2105 - Introduction to Computer Networks/assignment2/UnreliNET.java",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/ex3.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/L3/L3/ex1/demo/shdMemAndFork.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/L3/L3/ex1/demo/shdMemClient.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 3/L3/L3/ex1/demo/shdMemServer.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 1/ex3.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/ex2.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 1/ex2.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/submission/ex3.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/submission/ex1.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/submission/ex2.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/submission/clock.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/submission/alarmClock.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/L2/L2/ex3/stringTokenizer.c",
+		"/D/NUS/AY1617 S1/CS2106 - Introduction to Operating Systems/Lab 2/L2/L2/ex3/ex3.c"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 430.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"&",
+			"follow",
+			"recordselecte",
+			"recordselect",
+			"tracker",
+			"experimenttracker",
+			"markingmenul1",
+			"l1file",
+			"menul1file",
+			"trialsdata",
+			"trialsdata4",
+			"experiment",
+			"trialsdata",
+			"records",
+			"stint",
+			"designExtractor",
+			"moveclouds1",
+			"1,",
+			"priceline",
+			"weekdays.csv",
+			"#chart",
+			"dsv",
+			"getatt",
+			"csv",
+			"d3",
+			">.</",
+			"navbarTogglerDemo02",
+			"fontawesome",
+			"col-md",
+			"li {",
+			"li",
+			"img",
+			"button",
+			"audioElement",
+			"width=\"50%\" height=\"50%\"",
+			"col-xs-6",
+			"nopad",
+			"width=\"50%\"",
+			" width=\"250\"",
+			"col-",
+			"col-md-4 col-xs-6",
+			"60%",
+			"right",
+			"35",
+			"col-",
+			"40",
+			"img-",
+			"img-circle",
+			"party",
+			"todo",
+			"myCarousel",
+			"button",
+			"keynum",
+			"grayPalette",
+			"a",
+			"newsemap",
+			"arr",
+			"modEnt",
+			"modCode",
+			"tab",
+			"detectadditem",
+			"myNUS",
+			"inus",
+			"col-sm-"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"and",
+			"drift",
+			"online-shoppers-by-age-group.csv",
+			"#shoppersChart",
+			"navbarContent",
+			"col-lg",
+			"stream",
+			"width=\"60%\"",
+			"col-sm-6",
+			"alignpls",
+			" width=\"48%\"",
+			" width=\"50%\"",
+			"",
+			"col-xs-6 col-md-4",
+			"50%",
+			"60",
+			"col-md-60",
+			"col-md-",
+			"35",
+			"portfolioCarousel",
+			"option",
+			"key",
+			"colours",
+			"d",
+			"modNum",
+			"modEnt",
+			"pill"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 146.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
