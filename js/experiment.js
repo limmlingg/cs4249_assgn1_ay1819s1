@@ -55,10 +55,6 @@ function getParticipantId() {
 	} else if (participantType == 0) {
 		trialsFile = "./data/experiment_4.csv";
 	}
-
-	console.log("Trials File (for participant): " + trialsFile);
-
-	initExperiment();
 }
 
 // Load CSV files from data and return text
@@ -72,8 +68,6 @@ function getData(relativePath) {
 
 // Loads the CSV data files on page load and store it to global variables
 function initExperiment() {
-
-	console.log("Trials File: " + trialsFile);
 
 	// Get Trails
 	var data = getData(trialsFile);
@@ -140,6 +134,7 @@ function loadNextTrial(e){
 function nextTrial() {
 
 	tracker.resetClickCount();
+	console.log("reset clicks");
 	
 	if (currentTrial <= numTrials) {
 
@@ -492,10 +487,9 @@ function formatRadialMenuData(data) {
 
 
 getParticipantId();
-
+initExperiment();
 
 var interactionContainer = document.getElementById('interaction-container');
 interactionContainer.addEventListener('mousedown', function(){
 	tracker.numClicks++;
-	console.log("clicked once");
 })
