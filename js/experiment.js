@@ -180,7 +180,7 @@ function nextTrial() {
 				if(menuBreadth == 2) {
 					if (targetItem == "Fish" || targetItem == "Birds" || targetItem == "Fruit" || targetItem == "Vegetables") {
 						menu = MarkingMenu(markingMenuD2B2A, document.getElementById('marking-menu-container'));
-					} else { // targetItems are "Shoes", "Hat", "Asia", "Africa"
+					} else { // targetItems are "Shoes", "Hats", "Asia", "Africa"
 						menu = MarkingMenu(markingMenuD2B2B, document.getElementById('marking-menu-container'));
 					}
 				} else if (menuBreadth == 4) {
