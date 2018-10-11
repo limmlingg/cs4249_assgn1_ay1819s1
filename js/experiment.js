@@ -1,7 +1,7 @@
 'use strict';
 
 // Location of data files
-var trialsFile = "./data/experiments.csv";
+var trialsFile = "";
 const menuD1B2AFile = "./data/menu_d1_b2A.csv"
 const menuD1B2BFile = "./data/menu_d1_b2B.csv"
 const menuD1B4File  = "./data/menu_d1_b4.csv"
@@ -45,22 +45,15 @@ var participantType = null;
 function getParticipantId() {
 	var participantId = prompt("Enter your participant id", "1");
 
-	if (participantId != null) {
-		window.location.href = "experiment.html";
-		//console.log("Participant id: " + participantId);
-		participantType = participantId%4; // Get participant type from 0-3.
-
-		if (participantType == 0) {
-			trialsFile = "./data/experiment_1.csv";
-		} else if (participantType == 1) {
-			trialsFile = "./data/experiment_2.csv";
-		} else if (participantType == 2) {
-			trialsFile = "./data/experiment_3.csv";
-		} else if (participantType == 3) {
-			trialsFile = "./data/experiment_4.csv";
-		}
-
-		console.log("Trials File: " + trialsFile);
+	participantType = participantId%4; // Get participant type from 0-3.
+	if (participantType == 1) {
+		trialsFile = "./data/experiment_1.csv";
+	} else if (participantType == 2) {
+		trialsFile = "./data/experiment_2.csv";
+	} else if (participantType == 3) {
+		trialsFile = "./data/experiment_3.csv";
+	} else if (participantType == 0) {
+		trialsFile = "./data/experiment_4.csv";
 	}
 }
 
@@ -140,7 +133,6 @@ function loadNextTrial(e){
 // Move to next trai and record events
 function nextTrial() {
 
-	
 	if (currentTrial <= numTrials) {
 
 		var menuType = trialsData[currentTrial]['Menu Type'];
@@ -185,7 +177,7 @@ function nextTrial() {
 				if(menuBreadth == 2) {
 					if (targetItem == "Fish" || targetItem == "Birds" || targetItem == "Fruit" || targetItem == "Vegetables") {
 						menu = MarkingMenu(markingMenuD2B2A, document.getElementById('marking-menu-container'));
-					} else { // targetItems are "Shoes", "Hat", "Asia", "Africa"
+					} else { // targetItems are "Shoes", "Hats", "Asia", "Africa"
 						menu = MarkingMenu(markingMenuD2B2B, document.getElementById('marking-menu-container'));
 					}
 				} else if (menuBreadth == 4) {
@@ -285,10 +277,6 @@ function initializeMarkingMenu(){
 	if(markingMenuContainer == null){
 		interactionContainer.innerHTML += "<div id=\"marking-menu-container\" style=\"height:100%;width:100%\" onmousedown=\"markingMenuOnMouseDown()\" oncontextmenu=\"preventRightClick(event)\"></div>";
 	}
-
-	interactionContainer.addEventListener('click', function(){
-		tracker.numClicks++;
-	})
 }
 
 //Formats csv menu data in the structure accepted by radial menu
@@ -372,10 +360,6 @@ function initializeRadialMenu(){
 		interactionContainer.innerHTML += "<div id=\"radial-menu-container\" style=\"height:100%;width:100%\" oncontextmenu=\"toggleRadialMenu(event)\"></div>";
 	}
 
-	interactionContainer.addEventListener('click', function(){
-		tracker.numClicks++;
-	})
-
 }
 
 // Create radial menu svg element
@@ -411,7 +395,6 @@ function toggleRadialMenu(e) {
 		
 			// Start timing once menu appears
 			tracker.startTimer();
-			tracker.resetClickCount();
 		}
 	}else{
 		
@@ -426,7 +409,6 @@ function toggleRadialMenu(e) {
 	
 		// Start timing once menu appears
 		tracker.startTimer();
-		tracker.resetClickCount();
 		}
 	}
 	e.preventDefault();
@@ -499,3 +481,10 @@ function formatRadialMenuData(data) {
 	};
 
 }
+
+
+getParticipantId();
+var interactionContainer = document.getElementById('interaction-container');
+interactionContainer.addEventListener('mousedown', function(){
+	tracker.numClicks++;
+})

@@ -14,7 +14,7 @@ class ExperimentTracker {
 		this.selectedItem = null;
 		this.startTime = null;
 		this.endTime = null;
-		this.numClicks = null;
+		this.numClicks = 0;
 	}
 	
 	resetTimers(){
@@ -41,6 +41,8 @@ class ExperimentTracker {
 		this.trials.push([this.trial, this.attempt, this.menuType, this.menuDepth, this.menuBreadth, this.targetItem, this.selectedItem, this.startTime, this.endTime, this.numClicks])
 		this.resetTimers();
 		this.attempt++;
+
+		this.resetClickCount();
 
 	}
 
