@@ -368,10 +368,6 @@ function initializeRadialMenu(){
 		interactionContainer.innerHTML += "<div id=\"radial-menu-container\" style=\"height:100%;width:100%\" oncontextmenu=\"toggleRadialMenu(event)\"></div>";
 	}
 
-	interactionContainer.addEventListener('click', function(){
-		tracker.numClicks++;
-	})
-
 }
 
 // Create radial menu svg element
