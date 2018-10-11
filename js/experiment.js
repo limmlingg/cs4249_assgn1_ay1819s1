@@ -45,25 +45,20 @@ var participantType = null;
 function getParticipantId() {
 	var participantId = prompt("Enter your participant id", "1");
 
-	if (participantId != null) {
-		window.location.href = "experiment.html";
-		//console.log("Participant id: " + participantId);
-		participantType = participantId%4; // Get participant type from 0-3.
-
-		if (participantType == 0) {
-			trialsFile = "./data/experiment_1.csv";
-		} else if (participantType == 1) {
-			trialsFile = "./data/experiment_2.csv";
-		} else if (participantType == 2) {
-			trialsFile = "./data/experiment_3.csv";
-		} else if (participantType == 3) {
-			trialsFile = "./data/experiment_4.csv";
-		}
-
-		console.log("Trials File: " + trialsFile);
-
-		initExperiment();
+	participantType = participantId%4; // Get participant type from 0-3.
+	if (participantType == 1) {
+		trialsFile = "./data/experiment_1.csv";
+	} else if (participantType == 2) {
+		trialsFile = "./data/experiment_2.csv";
+	} else if (participantType == 3) {
+		trialsFile = "./data/experiment_3.csv";
+	} else if (participantType == 0) {
+		trialsFile = "./data/experiment_4.csv";
 	}
+
+	console.log("Trials File (for participant): " + trialsFile);
+
+	initExperiment();
 }
 
 // Load CSV files from data and return text
@@ -77,6 +72,8 @@ function getData(relativePath) {
 
 // Loads the CSV data files on page load and store it to global variables
 function initExperiment() {
+
+	console.log("Trials File: " + trialsFile);
 
 	// Get Trails
 	var data = getData(trialsFile);
@@ -501,3 +498,6 @@ function formatRadialMenuData(data) {
 	};
 
 }
+
+
+getParticipantId();
