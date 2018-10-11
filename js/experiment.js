@@ -285,11 +285,6 @@ function initializeMarkingMenu(){
 	if(markingMenuContainer == null){
 		interactionContainer.innerHTML += "<div id=\"marking-menu-container\" style=\"height:100%;width:100%\" onmousedown=\"markingMenuOnMouseDown()\" oncontextmenu=\"preventRightClick(event)\"></div>";
 	}
-
-	interactionContainer.addEventListener('mousedown', function(){
-		tracker.numClicks++;
-		console.log("clicked once");
-	})
 }
 
 //Formats csv menu data in the structure accepted by radial menu
@@ -501,3 +496,10 @@ function formatRadialMenuData(data) {
 
 
 getParticipantId();
+
+
+var interactionContainer = document.getElementById('interaction-container');
+interactionContainer.addEventListener('mousedown', function(){
+	tracker.numClicks++;
+	console.log("clicked once");
+})
