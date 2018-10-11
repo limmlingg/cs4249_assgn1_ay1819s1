@@ -1,7 +1,7 @@
 'use strict';
 
 // Location of data files
-var trialsFile = "./data/experiments.csv";
+var trialsFile = "";
 const menuD1B2AFile = "./data/menu_d1_b2A.csv"
 const menuD1B2BFile = "./data/menu_d1_b2B.csv"
 const menuD1B4File  = "./data/menu_d1_b4.csv"
@@ -61,6 +61,8 @@ function getParticipantId() {
 		}
 
 		console.log("Trials File: " + trialsFile);
+
+		initExperiment();
 	}
 }
 
