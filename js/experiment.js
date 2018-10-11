@@ -139,6 +139,7 @@ function loadNextTrial(e){
 // Move to next trai and record events
 function nextTrial() {
 
+	tracker.resetClickCount();
 	
 	if (currentTrial <= numTrials) {
 
@@ -410,7 +411,6 @@ function toggleRadialMenu(e) {
 		
 			// Start timing once menu appears
 			tracker.startTimer();
-			tracker.resetClickCount();
 		}
 	}else{
 		
@@ -425,7 +425,6 @@ function toggleRadialMenu(e) {
 	
 		// Start timing once menu appears
 		tracker.startTimer();
-		tracker.resetClickCount();
 		}
 	}
 	e.preventDefault();
