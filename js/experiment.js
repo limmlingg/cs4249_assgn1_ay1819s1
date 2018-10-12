@@ -122,7 +122,7 @@ function initExperiment() {
 	radialMenuD3B4  = formatRadialMenuData(menuD3B4Data);
 	
 	//Start the first trial
-	nextTrial();
+	//nextTrial();
 }
 
 // Wrapper around nextTrial() to prevent click events while loading menus
