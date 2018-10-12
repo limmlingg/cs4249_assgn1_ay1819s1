@@ -487,8 +487,6 @@ function formatRadialMenuData(data) {
 
 
 getParticipantId();
-initExperiment();
-
 var interactionContainer = document.getElementById('interaction-container');
 interactionContainer.addEventListener('mousedown', function(){
 	tracker.numClicks++;
