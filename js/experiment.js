@@ -55,6 +55,8 @@ function getParticipantId() {
 	} else if (participantType == 0) {
 		trialsFile = "./data/experiment_4.csv";
 	}
+
+	initExperiment();
 }
 
 // Load CSV files from data and return text
@@ -134,8 +136,7 @@ function loadNextTrial(e){
 function nextTrial() {
 
 	tracker.resetClickCount();
-	console.log("reset clicks");
-	
+
 	if (currentTrial <= numTrials) {
 
 		var menuType = trialsData[currentTrial]['Menu Type'];
