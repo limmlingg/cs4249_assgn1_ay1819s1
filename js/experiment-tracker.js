@@ -42,6 +42,8 @@ class ExperimentTracker {
 		this.resetTimers();
 		this.attempt++;
 
+		this.resetClickCount();
+
 	}
 
 	newTrial() {

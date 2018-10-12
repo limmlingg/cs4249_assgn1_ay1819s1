@@ -133,8 +133,6 @@ function loadNextTrial(e){
 // Move to next trai and record events
 function nextTrial() {
 
-	tracker.resetClickCount();
-
 	if (currentTrial <= numTrials) {
 
 		var menuType = trialsData[currentTrial]['Menu Type'];
