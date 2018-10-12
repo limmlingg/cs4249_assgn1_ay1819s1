@@ -55,8 +55,6 @@ function getParticipantId() {
 	} else if (participantType == 0) {
 		trialsFile = "./data/experiment_4.csv";
 	}
-
-	initExperiment();
 }
 
 // Load CSV files from data and return text
@@ -122,7 +120,7 @@ function initExperiment() {
 	radialMenuD3B4  = formatRadialMenuData(menuD3B4Data);
 	
 	//Start the first trial
-	//nextTrial();
+	nextTrial();
 }
 
 // Wrapper around nextTrial() to prevent click events while loading menus
